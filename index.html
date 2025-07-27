@@ -1,60 +1,70 @@
-<!DOCTYPE html>
+!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Padma Saiteja - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@400;700&family=Roboto:wght@400;500&display=swap" rel="stylesheet">
 </head>
 <body>
+    <a href="#about" class="skip-link">Skip to Content</a>
     <header>
         <nav>
-            <ul>
-                <li><a href="#home">Home</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#skills">Skills</a></li>
-                <li><a href="#projects">Projects</a></li>
-                <li><a href="#education">Education</a></li>
-                <li><a href="#resume">Resume</a></li>
-                <li><a href="#contact">Contact</a></li>
+            <div class="nav-toggle" aria-expanded="false" aria-label="Toggle navigation">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link">Home</a></li>
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#skills" class="nav-link">Skills</a></li>
+                <li><a href="#projects" class="nav-link">Projects</a></li>
+                <li><a href="#education" class="nav-link">Education</a></li>
+                <li><a href="#resume" class="nav-link">Resume</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
             </ul>
         </nav>
     </header>
-    <section id="about" class="about">
+    <section id="home" class="home section">
+        <h1>Welcome to My Portfolio</h1>
+        <p>Explore my skills, projects, and more!</p>
+    </section>
+    <section id="about" class="about section">
         <div class="profile">
-            <img src="profile.jpg" alt="Padma Saiteja" class="profile-img">
+            <img src="profile.jpg" alt="padma-saiteja" class="profile-img" loading="lazy">
         </div>
-        <div class="about-content">
+        <div class="about-content"
             <h1>Hello, Welcome</h1>
-            <h2>Padma Saiteja</h2>
+            <h2>PADMA SAITEJA</h2>
             <p>Hyderabad, Telangana | +91 7989597499 | <a href="mailto:padmasaiteja2024@gmail.com">padmasaiteja2024@gmail.com</a> | <a href="https://www.linkedin.com/in/padma-saiteja-572b44340" target="_blank">LinkedIn</a></p>
             <br>
             <p>A self-motivated and quick learner with a strong analytical mindset and a passion for technology. Adept at problem-solving and delivering innovative solutions through technical expertise.</p>
             <a href="#contact" class="contact-btn">Contact Me</a>
         </div>
     </section>
-    <section id="skills" class="skills">
+    <section id="skills" class="skills section">
         <h2>Skills</h2>
         <div class="skill-list">
-            <div class="skill">Python</div>
-            <div class="skill">HTML</div>
-            <div class="skill">CSS</div>
-            <div class="skill">SQL</div>
-            <div class="skill">GitHub</div>
-            <div class="skill">Computer Networking</div>
-            <div class="skill">Efficient AI Tool User</div>
-            <div class="skill">Good Communication</div>
+            <div class="skill"><span class="icon">🐍</span> Python</div>
+            <div class="skill"><span class="icon">🌐</span> HTML</div>
+            <div class="skill"><span class="icon">🎨</span> CSS</div>
+            <div class="skill"><span class="icon">🗄️</span> SQL</div>
+            <div class="skill"><span class="icon">🐙</span> GitHub</div>
+            <div class="skill"><span class="icon">🌐</span> Computer Networking</div>
+            <div class="skill"><span class="icon">🤖</span> Efficient AI Tool User</div>
+            <div class="skill"><span class="icon">🗣️</span> Good Communication</div>
         </div>
     </section>
-    <section id="projects" class="projects">
+    <section id="projects" class="projects section">
         <h2>Projects</h2>
         <div class="project-list">
             <div class="project">Identification of Counterfeit Products Using Blockchain Technology: We created a decentralized system for identification of counterfeit products using blockchain technology.</div>
             <div class="project">Portfolio Website using HTML and CSS: Developed a personal portfolio website to showcase skills and projects using HTML and CSS.</div>
         </div>
     </section>
-    <section id="education" class="education">
+    <section id="education" class="education section">
         <h2>Education</h2>
         <div class="edu-list">
             <div class="edu">JB Institute of Engineering and Technology, Hyderabad - B.Tech in Information Technology, GPA: 7.71/10</div>
@@ -62,21 +72,95 @@
             <div class="edu">Abhyasa The School, SSC - GPA: 9.7/10</div>
         </div>
     </section>
-    <section id="resume" class="resume">
-        <h1>THIS IS MY RESUME</h1>
-        <img src="100.jpg" alt="Padma Saiteja" class="resume">
-
+    <section id="resume" class="resume section">
+        <h2>Resume</h2>
+        <img src="100.jpg" alt="Padma Saiteja Resume" class="resume-img" loading="lazy" id="resume-img">
+        <p class="resume-caption">Click to enlarge</p>
     </section>
-    <section id="interests" class="interests">
+    <section id="interests" class="interests section">
         <h2>Interests</h2>
         <div class="interest-list">
-            <div class="interest">Playing Chess</div>
-            <div class="interest">Reading Self-Improvement Books</div>
+            <div class="interest"><span class="icon">♟️</span> Playing Chess</div>
+            <div class="interest"><span class="icon">📚</span> Reading Self-Improvement Books</div>
         </div>
     </section>
-    <section id="contact" class="contact">
+    <section id="contact" class="contact section">
         <h2>Contact</h2>
-        <p><a href="mailto:padmasaiteja2024@gmail.com" class="contact-btn">Email Me</a> | <a href="https://www.linkedin.com/in/padma-saiteja-572b44340" target="_blank" class="contact-btn">LinkedIn</a></p>
+        <div class="contact-buttons">
+            <a href="mailto:padmasaiteja2024@gmail.com" class="contact-btn email-btn">Email Me</a>
+            <a href="https://www.linkedin.com/in/padma-saiteja-572b44340" target="_blank" class="contact-btn linkedin-btn">LinkedIn</a>
+        </div>
     </section>
+    <button class="back-to-top" aria-label="Back to top">↑</button>
+    <div class="lightbox" id="lightbox">
+        <span class="lightbox-close" aria-label="Close lightbox">×</span>
+        <img src="" alt="Resume enlarged" class="lightbox-img">
+    </div>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+            // Hamburger Menu Toggle
+            const navToggle = document.querySelector('.nav-toggle');
+            const navMenu = document.querySelector('.nav-menu');
+            navToggle.addEventListener('click', () => {
+                const isExpanded = navToggle.getAttribute('aria-expanded') === 'true';
+                navToggle.setAttribute('aria-expanded', !isExpanded);
+                navToggle.classList.toggle('active');
+                navMenu.classList.toggle('active');
+            });
+            navMenu.querySelectorAll('a').forEach(link => {
+                link.addEventListener('click', () => {
+                    navToggle.setAttribute('aria-expanded', 'false');
+                    navToggle.classList.remove('active');
+                    navMenu.classList.remove('active');
+                });
+            });
+
+            // Active Nav Link
+            const navLinks = document.querySelectorAll('.nav-link');
+            const sections = document.querySelectorAll('section');
+            window.addEventListener('scroll', () => {
+                let current = '';
+                sections.forEach(section => {
+                    const sectionTop = section.offsetTop - 100;
+                    if (scrollY >= sectionTop) {
+                        current = section.getAttribute('id');
+                    }
+                });
+                navLinks.forEach(link => {
+                    link.classList.remove('active');
+                    if (link.getAttribute('href').substring(1) === current) {
+                        link.classList.add('active');
+                    }
+                });
+            });
+
+            // Back to Top Button
+            const backToTop = document.querySelector('.back-to-top');
+            window.addEventListener('scroll', () => {
+                backToTop.style.display = scrollY > 300 ? 'block' : 'none';
+            });
+            backToTop.addEventListener('click', () => {
+                window.scrollTo({ top: 0, behavior: 'smooth' });
+            });
+
+            // Lightbox for Resume
+            const resumeImg = document.querySelector('#resume-img');
+            const lightbox = document.querySelector('#lightbox');
+            const lightboxImg = document.querySelector('.lightbox-img');
+            const lightboxClose = document.querySelector('.lightbox-close');
+            resumeImg.addEventListener('click', () => {
+                lightboxImg.src = resumeImg.src;
+                lightbox.style.display = 'flex';
+            });
+            lightboxClose.addEventListener('click', () => {
+                lightbox.style.display = 'none';
+            });
+            lightbox.addEventListener('click', (e) => {
+                if (e.target === lightbox) {
+                    lightbox.style.display = 'none';
+                }
+            });
+        });
+    </script>
 </body>
 </html>
